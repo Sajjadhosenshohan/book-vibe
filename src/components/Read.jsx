@@ -1,11 +1,11 @@
-// import { useState } from "react";
-// import { useState } from "react";
-import Sort from "./Sort";
-import { getBlogs } from "./Utility";
 
-const Read = () => {
-    const bloo = getBlogs()
-    console.log(bloo);
+import Sort from "./Sort";
+
+import PropTypes from 'prop-types';
+
+const Read = ({readAll}) => {
+    
+    console.log(readAll);
 
     // const [readAll, setReadAll] = useState(bloo);
 
@@ -16,14 +16,15 @@ const Read = () => {
     //     }
     // }
 
-    
     return (
         <div>
             {
-                bloo.map(b => <Sort key={b.bookid} b={b}></Sort>)
+                readAll.map(b => <Sort key={b.bookid} b={b}></Sort>)
             }
         </div>
     );
 };
-
+Read.propTypes = {
+    readAll: PropTypes.object
+}
 export default Read;

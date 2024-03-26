@@ -14,9 +14,9 @@ import Listed from './Pages/Listed';
 import PageToRead from './Pages/PageToRead';
 
 import { Toaster } from 'react-hot-toast';
-import Read from './components/Read';
+// import Read from './components/Read';
 // import WishList from './components/WishList';
-import List from './components/List';
+// import List from './components/List';
 
 const router = createBrowserRouter([
   {
@@ -31,16 +31,16 @@ const router = createBrowserRouter([
       {
         path:'/listed',
         element: <Listed></Listed>,
-        children:[
-          {
-            index: true,
-            element: <Read></Read>,
-          },
-          {
-            path: 'wish',
-            element: <List></List>
-          }
-        ]
+        // children:[
+        //   {
+        //     index: true,
+        //     element: <Read></Read>,
+        //   },
+        //   {
+        //     path: 'wish',
+        //     element: <List></List>
+        //   }
+        // ]
       },
       {
         path:'/page',
