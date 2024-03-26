@@ -2,6 +2,7 @@ import {  useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 // import { getBlogs } from "../components/Utility";
 // import { getBlogs } from "../components/Utility";
+// import { getBlogs } from "../components/Utility";
 
 const Listed = () => {
     
@@ -86,9 +87,18 @@ const Listed = () => {
                             </svg>
                             <span>wishList</span>
                         </Link>
+
+
+                        {/* <div
+                  onClick={() => handleBookmark(blog)}
+              className='bg-primary p-3 ml-5 rounded-full hover:bg-opacity-30 bg-opacity-20 cursor-pointer hover:scale-105 overflow-hidden'>
+
+              <MdBookmarkAdd size={20} className='text-secondary' />
+            </div> */}
+
                     </div>
                 </div>
-                <Outlet/>
+                <Outlet />
             </article>
         </div>
     );

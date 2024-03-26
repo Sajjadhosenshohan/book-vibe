@@ -3,7 +3,7 @@ import HomeCard from "../components/HomeCard";
 
 const Home = () => {
     const homeCards = useLoaderData();
-    // console.log(homeCards);
+    console.log(homeCards);
 
     // const {bookName, author, image, rating, category } = homeCards;
 
