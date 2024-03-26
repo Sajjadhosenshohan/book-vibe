@@ -19,11 +19,11 @@ const Nav = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-[#131313CC] flex gap-4">
 
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold border-[#23BE0A] rounded-lg' : 'font-bold'}>Home</NavLink>
+                        <li><NavLink to="/" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Home</NavLink></li>
 
-                        <NavLink to="" className={({ isActive }) => isActive ? 'font-bold' : 'font-bold'}>Listed Books</NavLink>
+                        <li><NavLink to="/listed" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Listed Books</NavLink></li>
 
-                        <NavLink to="" className={({ isActive }) => isActive ? 'font-bold' : 'font-bold'}>Pages to Read</NavLink>
+                        <li><NavLink to="/page" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Pages to Read</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-5">

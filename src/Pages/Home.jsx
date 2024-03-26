@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import HomeCard from "../components/HomeCard";
 
 const Home = () => {
@@ -15,10 +15,10 @@ const Home = () => {
 
                     <img src="https://i.ibb.co/H4gBFTB/hero-removebg-preview.png" className="bg-[#1313130D] max-w-sm rounded-lg shadow-2xl" />
 
-                    <div className="space-y-16">
-                        <h1 className=" text-2xl lg:text-6xl font-bold">Books to freshen <br />up your bookshelf</h1>
+                    <div className="">
+                        <h1 className="mb-16 text-2xl lg:text-6xl font-bold">Books to freshen <br />up your bookshelf</h1>
 
-                        <button className="font-bold text-white text-xl py-5 px-6 rounded-lg bg-[#23BE0A]">View The List</button>
+                        <Link to="/listed"><button className="hover:scale-105 font-bold text-white text-xl py-5 px-6 rounded-lg bg-[#23BE0A]">View The List</button></Link>
                     </div>
                 </div>
             </div>

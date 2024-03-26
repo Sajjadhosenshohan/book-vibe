@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ListSaveBlog, saveBlog } from "./Utility";
 
 const NewContainer = () => {
     const newDiv = useLoaderData();
@@ -12,7 +13,15 @@ const NewContainer = () => {
     // console.log(id, SingleJob);
     const { image , bookName, author, yearOfPublishing, publisher, category, rating, totalPages, review, tags} = SingleBook;
 
-    
+    const handleRead = (SingleBook) =>{
+        // console.log(SingleBook);
+        saveBlog(SingleBook)
+    }
+    const wishListSaveBlog = (SingleBook) =>{
+        // console.log(SingleBook);
+        ListSaveBlog(SingleBook)
+    }
+
     return (
         <div className=" flex gap-12">
             {/* img */}
@@ -39,7 +48,7 @@ const NewContainer = () => {
                     <div className="flex gap-8 mb-4">
                         <p className="font-bold">Tag:</p>
                         {
-                            tags.map(tag => <span className='text-[#23BE0A] font-bold bg-[#F3F3F3] p-1 rounded-lg' key={tag.author}>#{tag}</span>)
+                            tags.map(tag => <span className='text-[#23BE0A] font-bold bg-[#F3F3F3] p-1 rounded-lg' key={tag.totalPages}>#{tag}</span>)
                         }
                     </div>
                 </div>
@@ -56,8 +65,9 @@ const NewContainer = () => {
                     </div>
 
                     <div className="flex gap-4">
-                        <button className="font-bold text-black border-2 border-[#1313134D] text-xl py-4 px-6 rounded-lg">Wishlist</button>
-                        <button className="font-bold text-white text-xl py-4 px-6 rounded-lg bg-[#59C6D2]">Wishlist</button>
+                        <button onClick={()=> handleRead(SingleBook)} className="hover:scale-105 hover:border-[#23BE0A] font-bold text-black border-2 border-[#1313134D] text-xl py-4 px-6 rounded-lg">Read</button>
+
+                        <button onClick={() => wishListSaveBlog(SingleBook)} className="hover:scale-105 font-bold text-white text-xl py-4 px-6 rounded-lg bg-[#59C6D2]">Wishlist</button>
 
                     </div>
                 </div>
