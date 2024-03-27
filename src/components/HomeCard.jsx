@@ -21,7 +21,7 @@ const HomeCard = ({card}) => {
                     </div>
 
                     <h2 className="card-title font-bold text-2xl">{bookName}</h2>
-                    <p className="text-[#131313CC] font-medium mt-4">By: {author}</p>
+                    <p className="text-[#131313CC] font-medium mt-4 flex-none">By: {author}</p>
                     <div className="mt-5 py-5 text-xl border-[#13131326] border-t-2  border-dashed flex justify-between font-medium">
                         <p>{category}</p>
 

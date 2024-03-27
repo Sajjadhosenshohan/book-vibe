@@ -7,16 +7,19 @@ import PropTypes from 'prop-types';
 const Sort = ({ b }) => {
     const { image, tags , bookName, author, publisher, yearOfPublishing, totalPages, rating, category} = b;
     return (
-        <div className="card card-side bg-base-100 shadow-xl p-6 gap-6 rounded-2xl border-2 border-[#13131326]">
-            <figure className="bg-[#1313130D] p-7 rounded-lg"><img className="w-[150px] h-[200px]" src={image} alt="Movie" /></figure>
+        <div className="card flex-col lg:card-side bg-base-100 shadow-xl p-3 lg:p-6 gap-6 rounded-2xl border-2 border-[#13131326]">
+
+            <figure className="bg-[#1313130D] p-7 rounded-lg">
+                <img className="w-[150px] h-[200px]" src={image} alt="Movie" />
+            </figure>
 
 
-            <div className="card-body">
-                <h2 className="font-bold text-2xl text-[#131313]">{bookName}</h2>
-                <p className="text-[#131313CC] font-medium">By: <span>{author}</span></p>
+            <div className="card-body p-2 lg:p-4">
+                <h2 className="font-bold text-2xl text-[#131313] text-center lg:text-left">{bookName}</h2>
+                <p className="text-[#131313CC] font-medium text-center lg:text-left">By: <span>{author}</span></p>
 
                 {/*  */}
-                <div className="flex  mb-4 gap-4 items-center">
+                <div className="flex flex-col lg:flex-row  mb-4 gap-4 space-y-3 items-center">
                     <p className="font-bold flex-none">Tag</p>
                     {
                         tags.map(tag => <span className='text-[#23BE0A] font-bold bg-[#F3F3F3] p-1 rounded-lg' key={tag.totalPages}>#{tag}</span>)
@@ -44,12 +47,12 @@ const Sort = ({ b }) => {
                 
                 <div className="divider text-[#13131326]"></div>
 
-                <div className="flex gap-3">
-                    <span className=" py-3 px-5 text-[#328EFF] bg-[#328EFF26] rounded-[30px] ">Category: {category}</span>
+                <div className="flex gap-1 lg:gap-3">
+                    <span className="py-2 px-3 lg:py-3 lg:px-5  flex justify-center items-center text-[#328EFF] bg-[#328EFF26] rounded lg:rounded-[30px] ">Category:<br/> {category}</span>
 
-                    <span className=" py-3 px-5 text-[#FFAC33] bg-[#328EFF26] rounded-[30px] ">Rating: {rating}</span>
+                    <span className="py-2  px-3 lg:py-3 lg:px-5 flex justify-center items-center text-[#FFAC33] bg-[#328EFF26] rounded lg:rounded-[30px] ">Rating: {rating}</span>
 
-                    <span className=" py-3 px-5 text-[white] bg-[#23BE0A] rounded-[30px] ">View Details</span>
+                    <span className="py-2 flex justify-center items-center px-3 lg:py-3 lg:px-5 text-[white] bg-[#23BE0A] rounded lg:rounded-[30px] ">View Details</span>
                     
                 </div>
             </div>

@@ -53,18 +53,6 @@ const Listed = () => {
         setReadAll2(filteredWishList);
     };
 
-
-    // <details>
-    //     <summary>
-    //         Parent
-    //     </summary>
-    //     <ul className="p-2 bg-base-100 rounded-t-none">
-    //         <li><a>Link 1</a></li>
-    //         <li><a>Link 2</a></li>
-    //     </ul>
-    // </details>
-
-
     return (
         <div className=' px-6  mx-auto space-y-12 overflow-hidden'>
 
@@ -75,12 +63,7 @@ const Listed = () => {
 
                 {/* button  */}
                 <div className="mt-8 mb-10 flex  justify-center">
-                    {/* <select className="select  join-item font-bold text-white pr-0 bg-[#23BE0A]">
-                        <option disabled selected>Sort</option>
-                        <option onClick={() => handleFilter('rating')}>Rating</option>
-                        <option onClick={() => handleFilter('totalPages')}>Number of pages</option>
-                        <option onClick={() => handleFilter('yearOfPublishing')}>Publisher year</option>
-                    </select> */}
+                
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn m-1 font-bold text-white  bg-[#23BE0A]">
                             <h2>Sort By</h2>
@@ -99,12 +82,7 @@ const Listed = () => {
 
             <article className='space-y-8 '>
                 <div className='space-y-6 '>
-                    {/* <ul>
-                        <li className="btn" onClick={()=>handleFilter('rating')}>rating</li>
-                        <li className="btn" onClick={()=>handleFilter('totalPages')}>Year of</li>
-                        <li className="btn" onClick={()=>handleFilter('publisher')}>Publisher</li>
-                    </ul> */}
-
+                    
                     {/* tabs */}
                     <div className='flex  items-center overflow-x-auto overflow-y-hidden sm:justify-start
                         flex-nowrap '>

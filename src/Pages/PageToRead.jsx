@@ -10,7 +10,7 @@ const PageToRead = () => {
 
     function BookName(name) {
         
-        return name.length > 11 ? name.substring(0, 11) + '...' : name;
+        return name.length > 8 ? name.substring(0, 8) + '...' : name;
     }
     
     const chartData = books.map(book => ({
@@ -34,7 +34,7 @@ const PageToRead = () => {
         Z`;
     };
     return (
-        <div style={{width: "100%", height: "80vh"}} className='flex justify-center items-center  bg-[#13131308]'>
+        <div  style={{width: "100%", height: "80vh"}} className='flex justify-center items-center  bg-[#13131308]'>
             <BarChart 
                 width={1000}
                 height={400}
