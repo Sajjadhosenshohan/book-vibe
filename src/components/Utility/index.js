@@ -20,11 +20,11 @@ export const saveBlog = (SingleBook) => {
     const isExist = allBlogs.find(b => b.bookid === SingleBook.bookid)
 
     if (isExist) {
-        return toast.error('already ace vai')
+        return toast.error('You Have Already Read This Book')
     }
     allBlogs.push(SingleBook)
     localStorage.setItem('read', JSON.stringify(allBlogs))
-    toast.success('add korlam vai')
+    toast.success('Books Added to Read List')
 }
 
 // wishList
@@ -39,20 +39,6 @@ export const getBook2 = () => {
     return books;
 }
 
-
-
-// const ListSaveBlog = () => {
-//     if(!readData.includes(idInt) && !wishData.includes(idInt)){
-//         saveReadWish(idInt);
-//         toast.success('added to wishList');
-//     }
-//     else if(wishData.includes(idInt)){
-//         toast.error('ace lagbe na')
-//     }
-//     else{
-//         alert('read hoice')
-//     }
-// }
 export const ListSaveBlog = (SingleBook) => {
     // console.log(SingleBook);
     let allBooks = getBook2()
@@ -63,14 +49,17 @@ export const ListSaveBlog = (SingleBook) => {
     const isace = checkRead.find(bo => bo.bookid == SingleBook.bookid)
 
     
-    if (isExist || isace) {
+    if (isace) {
 
-        return toast.error('pack u')
+        return toast.error('You Have Already Add This Book To WishList')
+    }
+    else if(isExist){
+        return toast.error('You Have Already Read This Book')
     }
     else{
         allBooks.push(SingleBook)
         localStorage.setItem('wishList', JSON.stringify(allBooks))
-        toast.success('add korlam vai')
+        toast.success('Book Added to WishList')
     }
 }
 

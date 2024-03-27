@@ -74,7 +74,7 @@ const Listed = () => {
                 </div>
 
                 {/* button  */}
-                <div className="mt-8 mb-10 flex border-2 border-red-400 justify-center">
+                <div className="mt-8 mb-10 flex  justify-center">
                     {/* <select className="select  join-item font-bold text-white pr-0 bg-[#23BE0A]">
                         <option disabled selected>Sort</option>
                         <option onClick={() => handleFilter('rating')}>Rating</option>
@@ -98,7 +98,7 @@ const Listed = () => {
             </div>
 
             <article className='space-y-8 '>
-                <div className='space-y-6 border-b-2 border-red-600'>
+                <div className='space-y-6 '>
                     {/* <ul>
                         <li className="btn" onClick={()=>handleFilter('rating')}>rating</li>
                         <li className="btn" onClick={()=>handleFilter('totalPages')}>Year of</li>
