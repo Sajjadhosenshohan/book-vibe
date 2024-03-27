@@ -14,14 +14,16 @@ import Listed from './Pages/Listed';
 import PageToRead from './Pages/PageToRead';
 
 import { Toaster } from 'react-hot-toast';
-// import Read from './components/Read';
-// import WishList from './components/WishList';
-// import List from './components/List';
+
+import Faq from './Pages/Faq';
+import Support from './Pages/Support';
+import ShowError from './Pages/ShowError';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ShowError></ShowError>,
     children:[
       {
         path:'/',
@@ -45,6 +47,15 @@ const router = createBrowserRouter([
       {
         path:'/page',
         element: <PageToRead></PageToRead>
+      },
+      
+      {
+        path:'/contact',
+        element: <Support></Support>
+      },
+      {
+        path:'/faq',
+        element: <Faq></Faq>
       },
       {
         path: '/blog/:bookid',

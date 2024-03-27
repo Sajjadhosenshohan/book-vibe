@@ -9,7 +9,7 @@ const PageToRead = () => {
     const books = getBlogs();
 
     function BookName(name) {
-        // Example abbreviation logic: take the first 10 characters
+        
         return name.length > 11 ? name.substring(0, 11) + '...' : name;
     }
     

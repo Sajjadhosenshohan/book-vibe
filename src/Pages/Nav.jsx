@@ -24,6 +24,10 @@ const Nav = () => {
                         <li><NavLink to="/listed" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Listed Books</NavLink></li>
 
                         <li><NavLink to="/page" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Pages to Read</NavLink></li>
+
+                        <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>Contact</NavLink></li>
+
+                        <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold': 'font-bold'}>FAQ</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-5">
