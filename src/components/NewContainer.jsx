@@ -65,9 +65,9 @@ const NewContainer = () => {
                     </div>
 
                     <div className="flex gap-4">
-                        <button onClick={()=> handleRead(SingleBook)} className="hover:scale-105 hover:border-[#23BE0A] font-bold text-black border-2 border-[#1313134D] text-xl py-4 px-6 rounded-lg">Read</button>
+                        <button onClick={()=> handleRead(SingleBook)} className=" hover:border-[#23BE0A] font-bold text-black border-2 border-[#1313134D] text-xl py-4 px-6 rounded-lg">Read</button>
 
-                        <button onClick={() => wishListSaveBlog(SingleBook)} className="hover:scale-105 font-bold text-white text-xl py-4 px-6 rounded-lg bg-[#59C6D2]">Wishlist</button>
+                        <button onClick={() => wishListSaveBlog(SingleBook)} className=" font-bold text-white text-xl py-4 px-6 rounded-lg bg-[#59C6D2] hover:bg-[#49a4ae]">Wishlist</button>
 
                     </div>
                 </div>

@@ -7,17 +7,8 @@ const Read = ({readAll}) => {
     
     console.log(readAll);
 
-    // const [readAll, setReadAll] = useState(bloo);
-
-    // const handleFilter = filter =>{
-    //     if(filter === 'rating'){
-    //         const rating = readAll.filter(book => book.rating)
-    //         setReadAll(rating)
-    //     }
-    // }
-
     return (
-        <div>
+        <div className="flex flex-col gap-6 ">
             {
                 readAll.map(b => <Sort key={b.bookid} b={b}></Sort>)
             }

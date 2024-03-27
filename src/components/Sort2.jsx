@@ -4,7 +4,7 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import PropTypes from 'prop-types';
 
 
-const Sort = ({ b }) => {
+const Sort2 = ({ b }) => {
     const { image, tags } = b;
     return (
         <div className="card card-side bg-base-100 shadow-xl p-6 gap-6 rounded-2xl border-2 border-[#13131326]">
@@ -57,7 +57,7 @@ const Sort = ({ b }) => {
     );
 };
 
-Sort.propTypes = {
+Sort2.propTypes = {
     b: PropTypes.object
 }
-export default Sort;
+export default Sort2;

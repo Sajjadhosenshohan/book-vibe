@@ -39,14 +39,33 @@ export const getBook2 = () => {
     return books;
 }
 
+
+
+// const ListSaveBlog = () => {
+//     if(!readData.includes(idInt) && !wishData.includes(idInt)){
+//         saveReadWish(idInt);
+//         toast.success('added to wishList');
+//     }
+//     else if(wishData.includes(idInt)){
+//         toast.error('ace lagbe na')
+//     }
+//     else{
+//         alert('read hoice')
+//     }
+// }
 export const ListSaveBlog = (SingleBook) => {
     // console.log(SingleBook);
     let allBooks = getBook2()
     const isExist = allBooks.find(b => b.bookid === SingleBook.bookid)
 
-    if (isExist) {
+    // for validation
+    let checkRead = getBlogs();
+    const isace = checkRead.find(bo => bo.bookid == SingleBook.bookid)
 
-        return toast.error('already ace vai read a')
+    
+    if (isExist || isace) {
+
+        return toast.error('pack u')
     }
     else{
         allBooks.push(SingleBook)
@@ -55,7 +74,7 @@ export const ListSaveBlog = (SingleBook) => {
     }
 }
 
-// save data to local storage
+
 
 // delete
 // export const deleteBlog = id => {

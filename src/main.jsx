@@ -28,21 +28,12 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>,
-        loader: () => fetch('HomeCard.json')
+        loader: () => fetch('https://shohan15020.github.io/book-jso/HomeCard.json')
       },
       {
         path:'/listed',
         element: <Listed></Listed>,
-        // children:[
-        //   {
-        //     index: true,
-        //     element: <Read></Read>,
-        //   },
-        //   {
-        //     path: 'wish',
-        //     element: <List></List>
-        //   }
-        // ]
+        
       },
       {
         path:'/page',
@@ -60,7 +51,7 @@ const router = createBrowserRouter([
       {
         path: '/blog/:bookid',
         element: <NewContainer></NewContainer>,
-        loader: () => fetch("../public/HomeCard.json")
+        loader: () => fetch("https://shohan15020.github.io/book-jso/HomeCard.json")
       }
     ]
   },
