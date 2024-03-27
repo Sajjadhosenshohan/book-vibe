@@ -8,12 +8,12 @@ const Home = () => {
   
 
     return (
-        <div>
+        <div className="p-0">
             {/* hero  */}
-            <div className="hero min-h-[550px] bg-[#1313130D] rounded-3xl lg:px-28 lg:py-20">
-                <div className="hero-content flex-col lg:flex-row-reverse gap-20">
+            <div className="hero p-0  bg-[#1313130D] rounded-3xl lg:px-28 lg:py-20">
+                <div className="hero-content flex-col lg:flex-row-reverse gap-20 border-2 border-red-500">
 
-                    <img src="https://i.ibb.co/H4gBFTB/hero-removebg-preview.png" className="bg-[#1313130D] max-w-sm rounded-lg shadow-2xl" />
+                    <img  src="https://i.ibb.co/H4gBFTB/hero-removebg-preview.png" className="bg-[#1313130D]  rounded-lg shadow-2xl" />
 
                     <div className="">
                         <h1 className="mb-16 text-2xl lg:text-6xl font-bold">Books to freshen <br />up your bookshelf</h1>
