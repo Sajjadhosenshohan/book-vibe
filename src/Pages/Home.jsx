@@ -11,7 +11,7 @@ const Home = () => {
         <div className="p-0">
             {/* hero  */}
             <div className="hero p-0  bg-[#1313130D] rounded-3xl lg:px-28 lg:py-20">
-                <div className="hero-content flex-col lg:flex-row-reverse gap-20 border-2 border-red-500">
+                <div className="hero-content flex-col lg:flex-row-reverse gap-20 ">
 
                     <img  src="https://i.ibb.co/H4gBFTB/hero-removebg-preview.png" className="bg-[#1313130D]  rounded-lg shadow-2xl" />
 
