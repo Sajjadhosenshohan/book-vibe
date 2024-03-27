@@ -21,7 +21,7 @@ const Nav = () => {
                             <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'border-2 border-[#23BE0A] text-[#23BE0A] rounded-lg font-bold' : 'font-bold'}>FAQ</NavLink></li>
                         </ul>
                     </div>
-                    <a className="text-xl md:text-3xl font-bold">Book Vibe</a>
+                    <a className="text-xl md:text-3xl font-bold">Book<span className="text-[#23BE0A]">S</span>hop</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-[#131313CC] flex gap-4">

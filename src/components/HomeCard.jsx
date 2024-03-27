@@ -3,9 +3,9 @@ import { FaRegStar } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 const HomeCard = ({card}) => {
-    // console.log(card);
+    
     const {bookName, author, image, rating, category , tags, bookid} = card;
-    // console.log(bookid);
+    
     return (
         <Link to={`/blog/${bookid}`}>
             <div className="border-2 border-[#13131326] h-[600px] card p-2 lg:p-6 card-compact  bg-base-100  shadow-xl">
@@ -13,8 +13,7 @@ const HomeCard = ({card}) => {
                 <div className="card-body">
 
                     <div className="flex text-[#23BE0A] font-bold  gap-4 mt-6 mb-4">
-                        {/* <span>Young Adult</span>
-                        <span>Identity</span> */}
+                     
                         {
                             tags.map(tag => <span className='bg-[#F3F3F3] p-1 rounded-lg' key={tag.author}>#{tag}</span>)
                         }

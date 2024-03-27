@@ -26,8 +26,7 @@ const Listed = () => {
         let filteredWishList ;
 
         if (filterType === 'rating') {
-            // Filter books with rating more than 4.4
-            // filteredBooks = readAll.filter(book => book.rating > 4.4);
+            
             filteredBooks = [...readAll].sort((a, b) => b.rating - a.rating);
             filteredWishList = [...readAll2].sort((a, b) => b.rating - a.rating);
 
@@ -48,7 +47,7 @@ const Listed = () => {
             filteredWishList = readAll2;
         }
 
-        // console.log(40,filteredBooks);
+        
         setReadAll(filteredBooks);
         setReadAll2(filteredWishList);
     };

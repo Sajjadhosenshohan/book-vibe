@@ -6,19 +6,19 @@ const NewContainer = () => {
 
     const { bookid } = useParams();
     const idInt = parseInt(bookid)
-    // console.log( bookid,newDiv);
+    
 
     const SingleBook = newDiv.find(job => job.bookid === idInt)
 
-    // console.log(id, SingleJob);
+    
     const { image , bookName, author, yearOfPublishing, publisher, category, rating, totalPages, review, tags} = SingleBook;
 
     const handleRead = (SingleBook) =>{
-        // console.log(SingleBook);
+        
         saveBlog(SingleBook)
     }
     const wishListSaveBlog = (SingleBook) =>{
-        // console.log(SingleBook);
+        
         ListSaveBlog(SingleBook)
     }
 
