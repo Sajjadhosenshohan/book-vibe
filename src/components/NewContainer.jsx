@@ -23,15 +23,15 @@ const NewContainer = () => {
     }
 
     return (
-        <div className=" flex gap-12">
+        <div className=" flex  justify-center items-center flex-col  lg:justify-start lg:items-start lg:flex-row gap-12   lg:text-left">
             {/* img */}
 
-            <div className="flex rounded-lg w-1/2 bg-[#1313130D] items-center justify-center">
+            <div className="flex lg:h-[514px] h-[350px] rounded-lg w-1/2 bg-[#1313130D] items-center justify-center">
                 <img  src={image} alt="" />
             </div>
             {/* text */}
 
-            <div className="w-1/2 space-y-6">
+            <div className="w-full space-y-6">
                 {/* title & author */}
                 <div>
                     <h2 className="text-4xl font-bold">{bookName}</h2>
